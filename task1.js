@@ -1,14 +1,15 @@
-function isPalindrom(){
-  var l=process.argv.length-2;
-  var s=process.argv[2];
-  var i=2;
-  while(l>1){
-    i++;
-  var str=process.argv[i];
-  s=s+str;
-  l--;
+var l=process.argv.length-2;
+var s=process.argv[2];
+var i=2;
+while(l>1){
+  i++;
+var str=process.argv[i];
+s=s+str;
+l--;
 }
-  //s=a;
+
+function isPalindrom(s){
+
   s=s.toLowerCase().replace(/[^a-zA-Zа-яА-Я]/g, '');
   var length=s.length;
   for(var i=0;i<length/2;i++)
@@ -19,4 +20,4 @@ function isPalindrom(){
    process.stdout.write('YES');
 
 }
-isPalindrom();
+isPalindrom(s);
