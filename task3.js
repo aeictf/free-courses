@@ -1,4 +1,3 @@
-function Sep(){
   var l=process.argv.length-2;
 var n=process.argv[2];
   var i=2;
@@ -8,6 +7,7 @@ var n=process.argv[2];
   n=n+str;
   l--;
 }
+function Sep(n){
   var a=n.match(/[aeiou]/ig);
   var b=n.match(/[bcdfghjklmnpqrstvwxyz]/ig);
   var c=n.match(/[0123456789]/ig);
@@ -28,4 +28,4 @@ var n=process.argv[2];
 
 }
 
-Sep();
+Sep(n);
